@@ -150,7 +150,7 @@ pub fn main() {
   let _ = test_part1()
   let _ = test_part2()
 
-  let assert Ok(input) = simplifile.read("src/day02/input.txt")
+  let assert Ok(input) = simplifile.read("src/y2023/day02/input.txt")
   use games <- result.try(parse_input(input))
 
   part1(games)

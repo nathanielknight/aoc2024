@@ -1,7 +1,7 @@
-import day02/solve
 import gleam/dict
 import gleam/result
 import gleeunit/should
+import y2023/day02/solve
 
 pub fn parse_draw_test() {
   "3 blue, 4 red"

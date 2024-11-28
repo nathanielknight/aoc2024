@@ -1,6 +1,6 @@
-import day01/solve
 import gleam/list
 import gleeunit/should
+import y2023/day01/solve
 
 pub fn parse_test() {
   "1foo2"

@@ -7,7 +7,7 @@ import gleam/string
 import simplifile
 
 fn get_input() -> List(String) {
-  let assert Ok(input) = simplifile.read("src/day01/input.txt")
+  let assert Ok(input) = simplifile.read("src/y2023/day01/input.txt")
   // let assert Ok(input) = simplifile.read("src/day01/example-input-2.txt")
   string.split(input, "\n")
   |> list.filter(fn(s: String) { !string.is_empty(s) })
