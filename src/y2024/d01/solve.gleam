@@ -25,9 +25,14 @@ fn parse_input(src: String) -> List(#(Int, Int)) {
   list.map(lines, parse_line)
 }
 
-fn solve_part1(input: List(#(Int, Int))) {
+fn prepare_input(input: List(#(Int, Int))) -> #(List(Int), List(Int)) {
   let firsts = list.map(input, fn(p) { p.0 }) |> list.sort(int.compare)
   let seconds = list.map(input, fn(p) { p.1 }) |> list.sort(int.compare)
+  #(firsts, seconds)
+}
+
+fn solve_part1(input: List(#(Int, Int))) {
+  let #(firsts, seconds) = prepare_input(input)
   let diff = fn(a, b) { int.absolute_value(a - b) }
   list.map2(firsts, seconds, diff)
   |> int.sum
