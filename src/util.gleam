@@ -7,7 +7,7 @@ pub fn unsafe_parse_int(src: String) -> Int {
   n
 }
 
-type Point =
+pub type Point =
   #(Int, Int)
 
 pub fn add_points(p1: Point, p2: Point) -> Point {

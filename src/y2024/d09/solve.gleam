@@ -267,14 +267,12 @@ pub fn main() {
   |> checksum
   |> io.debug
 
-  // input
-  // |> solve_part_1
-  // |> io.debug
+  input
+  |> solve_part_1
+  |> io.debug
 
   input_part2
-  |> compact_files
-  |> filemap_to_disklayout
-  |> checksum
+  |> solve_part_2
   |> io.debug
 
   Nil
